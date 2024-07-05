@@ -1,11 +1,22 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import { LayoutGrid } from "./ui/layout-grid";
+import { useGSAP } from "@gsap/react";
+
+import {
+  animateWithGsapLeft,
+  animateWithGsapRight,
+  animateWithGsapBottom,
+} from "@/app/utils/animation";
 
 export function FeaturesGallery() {
+  useGSAP(() => {
+    animateWithGsapBottom("#mainfeatures", { y: 0, opacity: 1, duration: 3 });
+    animateWithGsapBottom("#statement1", { y: 0, opacity: 1, duration: 1 });
+  }, []);
   return (
-    <div className="h-screen pb-48 w-full bg-slate-950">
-      <h1 className="flex items-center text-9xl mb-3 text-slate-600 font-bold justify-center text-white">
+    <div id="mainfeatures" className="h-screen pb-48 w-full bg-slate-950">
+      <h1 className="flex items-center text-9xl mb-3 text-slate-600 font-bold justify-center">
         Main Features
       </h1>
       <LayoutGrid cards={cards} />
