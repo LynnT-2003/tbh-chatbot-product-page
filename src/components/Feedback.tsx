@@ -58,8 +58,8 @@ const CARDS = [
         marketplace which is very hard to manage and we{" "}
         <Highlight>require a lot of labor</Highlight>
         in handling customer queries. This system can help us{" "}
-        <Highlight>reduce some of the workload</Highlight> of our staff and it’s
-        amazing that it works in <Highlight>Burmese</Highlight>.
+        <Highlight>reduce some of the workload</Highlight> of our staff and
+        it&apos;s amazing that it works in <Highlight>Burmese</Highlight>.
       </p>
     ),
   },
@@ -69,10 +69,11 @@ const CARDS = [
     designation: "Director of Kyaw Mobile Mawlamyine",
     content: (
       <p>
-        I'm sensing some <Highlight>serious "wow" vibes</Highlight>here,
-        especially since it supports the <Highlight>Burmese language</Highlight>
-        ! Love the CMS for making it accessible for non tech savvy admins.
-        Unsure if it'll be a sales superstar, but hey, why not
+        I&apos;m sensing some{" "}
+        <Highlight>serious &quot;wow&quot; vibes</Highlight>here, especially
+        since it supports the <Highlight>Burmese language</Highlight>! Love the
+        CMS for making it accessible for non tech savvy admins. Unsure if
+        it&apos;ll be a sales superstar, but hey, why not
         <Highlight> give it a try</Highlight> and see what happens?
       </p>
     ),
