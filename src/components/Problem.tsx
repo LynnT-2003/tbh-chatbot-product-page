@@ -17,8 +17,8 @@ const ProblemStatement = () => {
     animateWithGsapLeft("#image", { y: 0, opacity: 1, duration: 3 });
   }, []);
   return (
-    <div className="flex flex-col items-center bg-slate-900">
-      <div className="flex mt-48 pb-48 pl-64">
+    <div className="flex flex-col items-center">
+      <div className="flex mt-48 pb-64 pl-64">
         <span>
           <h1 id="problem" className="text-5xl text-white font-light">
             Problem Statement:
@@ -45,7 +45,12 @@ const ProblemStatement = () => {
           </h1>
         </span>
         <div id="image" className="flex items-center justify-center mx-48">
-          <Image src="/tbhlabs.jpg" alt="sample.png" width={300} height={300} />
+          <Image
+            src="/painpoint.png"
+            alt="sample.png"
+            width={300}
+            height={300}
+          />
         </div>
       </div>
     </div>

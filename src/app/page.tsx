@@ -7,6 +7,7 @@ import ProblemStatement from "@/components/Problem";
 import { SolutionDescription } from "@/components/SolutionDescription";
 import { FeaturesGallery } from "@/components/FeaturesGallery";
 import { TechStackSection } from "@/components/TechstackSection";
+import { FeedbackSection } from "@/components/Feedback";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -35,6 +36,7 @@ export default function Home() {
       <SolutionDescription />
       <FeaturesGallery />
       <TechStackSection />
+      <FeedbackSection />
     </div>
   );
 }
