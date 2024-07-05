@@ -2,9 +2,9 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { LandingLamp } from "@/components/LandingLamp";
-import Description from "../components/Description";
 import IntroDescription from "@/components/IntroDescription";
 import ProblemStatement from "@/components/Problem";
+import { SolutionDescription } from "@/components/SolutionDescription";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -30,6 +30,7 @@ export default function Home() {
       <LandingLamp />
       <IntroDescription />
       <ProblemStatement />
+      <SolutionDescription />
     </div>
   );
 }
