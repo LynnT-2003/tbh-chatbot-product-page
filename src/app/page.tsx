@@ -4,6 +4,7 @@ import Image from "next/image";
 import { LandingLamp } from "@/components/LandingLamp";
 import Description from "../components/Description";
 import IntroDescription from "@/components/IntroDescription";
+import ProblemStatement from "@/components/Problem";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -28,6 +29,7 @@ export default function Home() {
     <div className="bg-slate-950">
       <LandingLamp />
       <IntroDescription />
+      <ProblemStatement />
     </div>
   );
 }
