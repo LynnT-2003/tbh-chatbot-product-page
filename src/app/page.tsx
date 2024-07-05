@@ -5,6 +5,7 @@ import { LandingLamp } from "@/components/LandingLamp";
 import IntroDescription from "@/components/IntroDescription";
 import ProblemStatement from "@/components/Problem";
 import { SolutionDescription } from "@/components/SolutionDescription";
+import { FeaturesGallery } from "@/components/FeaturesGallery";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -31,6 +32,7 @@ export default function Home() {
       <IntroDescription />
       <ProblemStatement />
       <SolutionDescription />
+      <FeaturesGallery />
     </div>
   );
 }
